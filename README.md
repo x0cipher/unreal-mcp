@@ -57,7 +57,21 @@ learn Unreal — you can watch the agent work and read every API call it makes.
 The headliner tool, **`execute_python`**, runs code in the editor's Python scope
 (the full `unreal` module) and returns captured logs *and* any exception trace —
 so the agent always knows what actually happened. It's the universal escape hatch
-while native commands grow up around it.
+while higher-level tools grow up around it.
+
+### Tools
+
+| Tool | What it does |
+|---|---|
+| `ping` | Health check — returns `pong`. |
+| `execute_python` | Run arbitrary Python in the editor; returns logs + errors. |
+| `spawn_actor` | Spawn an actor (any `unreal` class) with location/rotation/scale/label; static meshes get a mesh. |
+| `list_actors` | List level actors (label, class, location), with optional name filter. |
+| `set_actor_transform` | Move / rotate / scale the actor(s) with a given label. |
+| `delete_actor` | Delete the actor(s) with a given label. |
+
+The actor tools are thin wrappers over `execute_python` — no plugin rebuild
+needed to add more, so the surface grows fast.
 
 ## 🚀 Quickstart
 
@@ -132,7 +146,8 @@ cd server && .venv/Scripts/python test_roundtrip.py
 ## 🗺️ Roadmap
 
 - [x] End-to-end pipeline: `ping` + `execute_python` with log/error feedback
-- [ ] Native command coverage — actors, assets, materials, Blueprints, Niagara…
+- [x] Actor commands — `spawn_actor` / `list_actors` / `set_actor_transform` / `delete_actor`
+- [ ] More native coverage — assets, materials, Blueprints, Niagara…
 - [ ] Blueprint **graph** authoring (K2Node creation + pin wiring)
 - [ ] A real grounding loop — viewport screenshots + structured error feedback
 - [ ] Packaging / runtime agent support

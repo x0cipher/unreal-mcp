@@ -24,7 +24,8 @@ Edit `claude_desktop_config.json`
 }
 ```
 
-Restart Claude Desktop. The `ping` and `execute_python` tools should appear.
+Restart Claude Desktop. The unreal-mcp tools (`ping`, `execute_python`,
+`spawn_actor`, `list_actors`, `set_actor_transform`, `delete_actor`) should appear.
 
 ## Claude Code (CLI)
 
