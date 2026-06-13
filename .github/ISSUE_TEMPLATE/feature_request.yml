@@ -1,0 +1,21 @@
+name: ✨ Feature / command request
+description: Suggest a new command or capability
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like UnrealMCP to do?
+      description: Describe the capability. If it's a new command, what should the agent be able to ask for?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it useful?
+      description: What does it unlock? What are you trying to build?
+  - type: textarea
+    id: notes
+    attributes:
+      label: Implementation notes (optional)
+      description: Relevant `unreal` APIs, prior art in other tools, or sketch of the approach.

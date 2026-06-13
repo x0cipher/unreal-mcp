@@ -1,0 +1,48 @@
+name: 🐛 Bug report
+description: Something broke or behaved unexpectedly
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for the report! The editor Output Log and the `log` field returned by `execute_python` are the most useful things you can include.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you get instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open MCPProject in UE 5.7
+        2. Connect <agent>
+        3. Ask it to "…"
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / output
+      description: Editor Output Log lines, server stderr, or the returned `log` / `command_result`.
+      render: shell
+  - type: input
+    id: ue-version
+    attributes:
+      label: Unreal Engine version
+      placeholder: "5.7"
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: MCP client
+      placeholder: Claude Code / Claude Desktop / Cursor / …
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: Windows 11 / macOS 14 / …

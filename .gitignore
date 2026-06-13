@@ -1,0 +1,34 @@
+# --- Study clones (not part of this project) ---
+reference/
+
+# --- Unreal generated/build artifacts ---
+MCPProject/Binaries/
+MCPProject/Build/
+MCPProject/Intermediate/
+MCPProject/Saved/
+MCPProject/DerivedDataCache/
+MCPProject/.vs/
+MCPProject/*.sln
+MCPProject/Plugins/**/Binaries/
+MCPProject/Plugins/**/Intermediate/
+
+# --- Per-developer editor scratch (not shared) ---
+MCPProject/Content/Developers/
+MCPProject/Content/Collections/
+
+# --- Python ---
+server/.venv/
+server/__pycache__/
+**/__pycache__/
+*.pyc
+.venv/
+
+# --- Build / tool logs ---
+build.log
+*.log
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
