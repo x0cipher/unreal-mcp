@@ -14,5 +14,5 @@
 - [ ] Engine/UObject calls stay on the game thread
 - [ ] Python passes `ruff check server` and `ruff format --check server`
 - [ ] New command? Added both the plugin handler **and** the server `@mcp.tool()` with a clear docstring
-- [ ] Updated `CHANGELOG.md` under `[Unreleased]` if behavior changed
+- [ ] Commits follow [Conventional Commits](https://www.conventionalcommits.org) (release-please generates the changelog from them)
 - [ ] No build artifacts or `reference/` clones committed

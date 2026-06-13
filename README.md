@@ -12,7 +12,7 @@ Describe what you want; watch it appear in the viewport.
 [![Unreal Engine 5.7](https://img.shields.io/badge/Unreal%20Engine-5.7-0e1128.svg?logo=unrealengine)](https://www.unrealengine.com)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB.svg?logo=python&logoColor=white)](https://www.python.org)
 [![MCP](https://img.shields.io/badge/Model%20Context%20Protocol-black.svg)](https://modelcontextprotocol.io)
-[![Status: v0.1](https://img.shields.io/badge/status-v0.1%20%E2%80%94%20early-f59e0b.svg)](CHANGELOG.md)
+[![Status: v0.1](https://img.shields.io/badge/status-v0.1%20%E2%80%94%20early-f59e0b.svg)](https://github.com/x0cipher/unreal-mcp/releases)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-8b5cf6.svg)](CONTRIBUTING.md)
 
 </div>
@@ -137,7 +137,7 @@ cd server && .venv/Scripts/python test_roundtrip.py
 - [ ] A real grounding loop — viewport screenshots + structured error feedback
 - [ ] Packaging / runtime agent support
 
-See [`CHANGELOG.md`](CHANGELOG.md) for what's shipped.
+See the [Releases](https://github.com/x0cipher/unreal-mcp/releases) for what's shipped.
 
 ## 🔒 Security
 

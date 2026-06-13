@@ -92,7 +92,11 @@ not yet covered.
 
 - Branch off `main`, keep PRs focused, and describe what you changed and how you
   tested it.
-- Update `CHANGELOG.md` under `[Unreleased]` if you changed behavior.
+- Write [Conventional Commit](https://www.conventionalcommits.org) messages
+  (`feat:`, `fix:`, `docs:`, `refactor:`, …). Releases and the changelog are
+  generated automatically from these via [release-please](https://github.com/googleapis/release-please),
+  so there's no changelog to update by hand — your commit subject *is* the
+  release note.
 - Be patient and kind in review — same goes for us.
 
 Not sure where to start or whether an idea fits? Open an issue and ask. No
