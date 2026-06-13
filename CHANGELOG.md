@@ -33,5 +33,5 @@ The first end-to-end proof that the pipeline works.
 - Round-trip smoke test (`server/test_roundtrip.py`) and connection docs
   (`docs/connecting-agents.md`).
 
-[Unreleased]: https://github.com/x0cipher/UnrealMCP/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/x0cipher/UnrealMCP/releases/tag/v0.1.0
+[Unreleased]: https://github.com/x0cipher/unreal-mcp/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/x0cipher/unreal-mcp/releases/tag/v0.1.0
