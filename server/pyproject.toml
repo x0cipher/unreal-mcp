@@ -1,6 +1,6 @@
 [project]
 name = "unreal-mcp-server"
-version = "0.1.0" # x-release-please-version
+version = "0.1.1" # x-release-please-version
 description = "MCP server bridging LLM agents to the Unreal Editor via the UnrealMCP plugin."
 readme = "README.md"
 requires-python = ">=3.10"
